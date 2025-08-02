@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="apex.css">
+</head>
+<body>
+  <header><h1>Product Listing Page</h1></header>
+
+  <div class="filter-sort">
+    <select id="categoryFilter" onchange="filterProducts()">
+      <option value="all">All</option>
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+    </select>
+
+    <select id="priceSort" onchange="sortProducts()">
+      <option value="none">Sort by Price</option>
+      <option value="low">Low to High</option>
+      <option value="high">High to Low</option>
+    </select>
+  </div>
+
+  <div class="product-container" id="productContainer"></div>
+
+  <script src="apex.js"></script>
+</body>
+</html>
