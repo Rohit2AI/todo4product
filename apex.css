@@ -1,0 +1,66 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  header {
+    background: #007bff; 
+    color: white; 
+    padding: 15px; 
+    text-align: center;
+  }
+  
+  nav a {
+    color: white; 
+    margin: 0 10px; 
+    text-decoration: none;
+  }
+  
+  section { padding: 20px; }
+
+  
+  
+  footer {
+    background: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .todo-container { text-align: center; padding: 20px; }
+  .todo-container input { padding: 10px; width: 200px; }
+  .todo-container button { padding: 10px; }
+  
+  ul { list-style: none; padding: 0; }
+  ul li { 
+    background: #f4f4f4; 
+    margin: 5px auto; 
+    padding: 10px; 
+    width: 250px; 
+    display: flex; 
+    justify-content: space-between;
+  }
+  
+  .product-container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    width: 150px; 
+    text-align: center; 
+    border-radius: 5px;
+  }
+  
+  .filter-sort { text-align: center; margin: 20px; }
+  
+  @media(max-width:768px) {
+    .product-container { flex-direction: column; align-items: center; }
+  }
+  
